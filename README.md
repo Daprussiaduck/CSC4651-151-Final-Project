@@ -7,7 +7,7 @@ The release is the final trained network, the presentation and a video of the pr
 Uses Tensorflow version 2.14, 'latest' has since been updated and loading network in a newer tensorflow version causes an error 
 
 camera.py, confuse.py and results.py all require Final.keras in root of the repo<br/>
-confuse.py, results.py, and all training files require the [dataset, "https://www.kaggle.com/datasets/kapitanov/hagrid"], either mapped through docker or locally, can modify path accordingly
+confuse.py, results.py, and all training files require the [dataset]("https://www.kaggle.com/datasets/kapitanov/hagrid"), either mapped through docker or locally, can modify path accordingly
 
 
 Code:
@@ -21,5 +21,5 @@ Code:
         results.py - Attempt at confuse.py, but didn't work too well and didn't break Accuracy-Loss and Confusion into two separate callable (Requires Sci-py package to be installed)
         train2.py - Was used to take the output from train.py and add another 20 epochs under a v2 folder
         train3.py - Was used similar to train2.py, but added 40 epochs and put them under a v3 folder
-        trainSmall.py - Same as train.py, but reduced image size to about 512x512
+        trainSmall.py - Same as train.py, but used the small size dataset
         trainSmall2.py - Same as train2.py, but for the trainSmall.py network output
