@@ -37,7 +37,7 @@ def accLossGraph():
 
 def confusionMatrix():
     print('Starting confusion matrix')
-    validDir = pathlib.Path('/media/daprussiaduck/Raid_Share/HaGRID/test').with_suffix('')
+    validDir = pathlib.Path('/PATH_TO_DATASET/HaGRID/test').with_suffix('')
     batchSize = 32 # Batch size of the Dataset
     scalingFactor = 4 # scaling factor of the full image
     imgHeight = int(1920/scalingFactor) # desired image height

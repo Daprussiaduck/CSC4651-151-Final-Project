@@ -75,6 +75,6 @@ if __name__ == '__main__':
     #show the model summary
     model.summary()
     # Train new model
-    model.fit(trainingDS, epochs = 20, validation_data = validateDS, callbacks = [checkpointCallback])
+    model.fit(trainingDS, epochs = 80, validation_data = validateDS, callbacks = [checkpointCallback])
     # Save model after training
-    model.save('/HaGRID/' + str(time) + "/done.keras")
+    model.save('/HaGRID/' + str(time) + "/Final.keras")
