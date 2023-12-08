@@ -13,7 +13,7 @@ confuse.py, results.py, and all training files require the [dataset](https://www
 Code:
 
     src
-        camera.py - Runs the program with webcam as the input (Requires OpenCV2 installed [both its pytho package and system install])
+        camera.py - Runs the program with webcam as the input (Requires OpenCV2 installed [both its python package and system install])
         confuse.py - Can print the Confusion Matrix and the Accuracy/Loss function (Requires Sci-py python package to be installed)
         train.py - Trains a new network (In Docker)
         
