@@ -1,0 +1,10 @@
+#!/bin/bash
+
+docker build -t csc4651-proj .
+
+docker image prune -f
+
+echo
+echo
+
+docker run --rm --name test --mount type=bind,src=/PATH_TO_DATADEST/HaGRID,dst=/HaGRID --gpus all csc4651-proj
